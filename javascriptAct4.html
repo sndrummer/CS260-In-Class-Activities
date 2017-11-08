@@ -1,0 +1,32 @@
+<html>
+    
+    <head>
+    <script type="text/javascript">
+    var cities = ["Alpine", "Altamont","Alton"];
+    var mfunc = function(){
+    var part = document.getElementById("partial").value;
+    console.log("part = " + part); //this is cout in javascript
+    var inner="<ul>"
+    for(i=0; i<cities.length;i++){
+        if(cities[i].startsWith(part)){
+        inner+="<li>"+cities[i]+"</li>"
+         }
+        }
+    inner+="</ul>"
+    console.log(inner);
+    document.getElementById("suggestions");
+        suggestions.innerHTML = inner;
+    }
+    
+    </script>
+    
+    </head>
+    <body>
+    <h1>Cities</h1>
+    <p></p>
+    Enter City: <input type="test" id="partial" onkeyup="mfunc()">
+    <div id="suggestions">
+    Suggested cities
+    </div>
+    </body>
+    </html>

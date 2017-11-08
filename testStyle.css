@@ -1,0 +1,12 @@
+div{
+    background-color: blue; 
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#header{
+    color: green;
+    font-size: 20px;
+}
